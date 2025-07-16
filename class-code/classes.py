@@ -51,16 +51,39 @@ cat4.speak()
 # my name is {name} and I am from {country}
 
 class Student():
+    teacher = "Michael"
+    # students = []
 
-    def __init__(self, name, country = "Bahrain"):
+    def __init__(self, name = None, country = "Bahrain"):
         self.name = name
         self.country = country
+        self.lunch_money = 10
+        # Student.students.append(self)
+
 
     def introduce_self(self):
         print(f" my name is {self.name} and I am from {self.country}")
     
+    @classmethod #this makes this a class method and not an instance method
+    def change_teacher(self, new_teacher):
+        self.teacher = new_teacher
+    
+    def __str__(self):
+        return f"Name: {self.name}"
 
 
 shafi = Student("Shafi")
+sayed = Student("Sayed")
 
-shafi.introduce_self()
+# shafi.teacher = "Omar"
+
+Student.teacher = "Omar"
+print(shafi.teacher)
+print(sayed.teacher)
+
+shafi.lunch_money += 100
+
+
+
+
+print(shafi)
