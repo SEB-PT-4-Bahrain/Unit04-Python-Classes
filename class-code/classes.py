@@ -49,3 +49,18 @@ cat4.speak()
 # this class should have the following properties: name and country
 # this class should havw 1 method introduce_self(): which should print
 # my name is {name} and I am from {country}
+
+class Student():
+
+    def __init__(self, name, country = "Bahrain"):
+        self.name = name
+        self.country = country
+
+    def introduce_self(self):
+        print(f" my name is {self.name} and I am from {self.country}")
+    
+
+
+shafi = Student("Shafi")
+
+shafi.introduce_self()
