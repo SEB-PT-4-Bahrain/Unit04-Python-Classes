@@ -44,3 +44,8 @@ cat3.speak()
 cat4.speak()
 
 
+
+# exercise 1: create a class called student
+# this class should have the following properties: name and country
+# this class should havw 1 method introduce_self(): which should print
+# my name is {name} and I am from {country}
