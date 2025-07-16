@@ -14,13 +14,33 @@ print(cat1)
 # creating a class for Cat
 class Cat():
     # the function that gets called when we create a cat
-    # rule 1: ALL class methods first arguement is self
-    # rule 2: every class has an __init__ method
-    def __init__():
-        pass
-    
+    # rule 1: every class has an __init__ method
+    # rule 2: ALL class methods first arguement is self
+    def __init__(self,first_param,second_param):
+        self.name = first_param
+        self.age = second_param
+
+# declaring a method for the class
+    def speak(self):
+        print(f"{self.name} says Meow")    
 
 # Creating a new instance of cat
 cat3 = Cat("marhsmellow2",6)
+cat4 = Cat("Lucy",8)
+
+
+print(cat3.name)
+
+print(cat3.age)
+
+
+
+print(cat3)
+
+
+# calling a mehod on an object
+cat3.speak()
+
+cat4.speak()
 
 
